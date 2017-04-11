@@ -4,18 +4,11 @@ html {
 }
 
 .page-header {
+    margin-top: 5px;
     float: left;
     width: 100%;
 }
 
-.footer {
-    padding-bottom: 10px;
-    border-top: 1px solid #eee;
-    height: 80px;
-    background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to top, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
 
 .img-header-vector {
     float: left;
@@ -23,8 +16,34 @@ background: linear-gradient(to top, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 
 }
 
 .img-header-treescape {
+    background-color: #18453b;
     float: right;
     height: 50px;
+}
+
+@media (max-device-width: 667px) {
+    .img-header-vector,
+    .img-header-treescape {
+        height: 35px;
+    }
+}
+
+.footer {
+    height: 50px;
+    background: #072438;
+    padding-top: 5px;
+}
+
+.footer-link {
+    font-size: 0.9em;
+}
+
+.text-colour-grey {
+    color: #83919b;
+}
+
+.text-colour-white {
+    color: #ffffff;
 }
 
 .page-tab {
