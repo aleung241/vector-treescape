@@ -1,0 +1,81 @@
+html {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.page-header {
+    float: left;
+    width: 100%;
+}
+
+.footer {
+    padding-bottom: 10px;
+    border-top: 1px solid #eee;
+    height: 80px;
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to top, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.img-header-vector {
+    float: left;
+    height: 50px;
+}
+
+.img-header-treescape {
+    float: right;
+    height: 50px;
+}
+
+.page-tab {
+    width: 50%;
+    font-weight: bold;
+}
+
+.title-header {
+    margin-bottom: 30px;
+}
+
+.nav-tabs {
+    margin-bottom: 30px;
+}
+
+#poleIdTab {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.search-button {
+    margin: auto;
+    background-color: #aac341;
+    border-color: #aac341;
+    color: white;
+    max-width: 550px;
+    margin-top: 40px;
+}
+
+.search-button:active,
+.search-button:hover,
+.search-button:focus,
+.search-button:visited {
+    background-color: #8ea233;
+    border-color: #8ea233;
+    color: white;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+td:last-child {
+    text-align: left;
+}
+
+#accordion {
+    margin-top: 20px;
+}
+
+.panel-title {
+    text-align: center;
+}
