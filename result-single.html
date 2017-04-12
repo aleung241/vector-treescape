@@ -43,24 +43,24 @@
         <h1 class="title-header">
             POLE ABC123
         </h1>
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td class="col-xs-3"><strong>Pole ID</strong></td>
-                    <td class="col-xs-1"></td>
-                    <td class="col-xs-8">POLE ABC123</td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <!-- Collapsible groups -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                <h4 class="panel-title">
-                                    <strong>CTN0</strong>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
+        <div class="panel-group">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="col-xs-3"><strong>Pole ID</strong></td>
+                        <td class="col-xs-1"></td>
+                        <td class="col-xs-8">POLE ABC123</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <!-- Collapsible groups -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapseSubOne">
+                                    <h4 class="panel-title">
+                                        <strong>CTN0</strong>
+                                    </h4>
+                                </div>
+                                <div id="collapseSubOne" class="panel-collapse collapse">
                                     <table class="table">
                                         <tbody>
                                             <tr>
@@ -87,7 +87,8 @@
                                                             <tr>
                                                                 <td class="col-xs-3"><strong>Work Order Status</strong></td>
                                                                 <td class="col-xs-1"></td>
-                                                                <td class="col-xs-8">Very close to done. So close that I have to say it twice</td>
+                                                                <td class="col-xs-8">Very close to done. So close that I have to say it twice
+                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -112,11 +113,113 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" href="#collapseSubOne2">
+                                    <h4 class="panel-title">
+                                        <strong>CTN1</strong>
+                                    </h4>
+                                </div>
+                                <div id="collapseSubOne2" class="panel-collapse collapse">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Notice ID</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">CTN1-xxxxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Notice Issue Date</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">20/04/1980</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Corrective Task Notification Status</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">Open
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="col-xs-3"><strong>Work Order #</strong></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-8">43878523985</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-xs-3"><strong>Work Order Status</strong></td>
+                                                                <td class="col-xs-1"></td>
+                                                                <td class="col-xs-8">Very close to done. So close that I have to say it twice
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Tree Species</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">Podocarpus totara</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Number of Trees</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">42</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Tree Coordinates</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">whatever, whatever</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#singleResultAccordion" href="#collapseSubOne3">
+                                    <h4 class="panel-title">
+                                        <strong>CTN2</strong>
+                                    </h4>
+                                </div>
+                                <div id="collapseSubOne3" class="panel-collapse collapse">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Notice ID</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">CTN2-xxxxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Notice Issue Date</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">20/04/1980</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Corrective Task Notification Status</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">Closed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Tree Species</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">Podocarpus totara</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Number of Trees</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">42</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-3"><strong>Tree Coordinates</strong></td>
+                                                <td class="col-xs-1"></td>
+                                                <td class="col-xs-8">whatever, whatever</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="footer navbar-fixed-bottom">
             <div class="col-xs-12">
                 <a href="http://vector.co.nz/privacy-policy" class="text-colour-white pull-left">Privacy policy</a>

@@ -22,6 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/ie-emulation-modes-warning.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
     <!-- SweetAlert2 -->
     <!-- for IE and Android native browser support -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.0/sweetalert2.min.js"></script>
@@ -46,8 +47,8 @@
         </div>
         <!-- tabs -->
         <ul class="nav nav-tabs">
-            <li class="active page-tab"><a href="#poleIdTab" data-toggle="tab">Search By Pole ID</a></li>
-            <li class="page-tab"><a href="#locationTab" data-toggle="tab">Search By Current Location</a></li>
+            <li class="active page-tab"><a href="#poleIdTab" data-toggle="tab">Pole ID Search</a></li>
+            <li class="page-tab"><a href="#locationTab" data-toggle="tab" onclick="locationTabClick()">Location Search</a></li>
         </ul>
         <!-- tab content -->
         <div class="tab-content">
@@ -58,13 +59,16 @@
                     <input type="text" class="form-control" placeholder="abdc1243">
                 </div>
                 <button type="button" class="btn btn-lg btn-block search-button">Search</button>
-                <button type="button" style="margin-top: 40px;" onclick="noResultsClick()">Click here to see popup for "no results". Button for dev purposes. Remove when done</button>
-                <button type="button" style="margin-top: 10px;" onclick="singleResultClick()">Navigate to single result page. Button for dev purposes. Remove when done</button>
-                <button type="button" style="margin-top: 10px;" onclick="multipleResultClick()">Navigate to multiple results page. Button for dev purposes. Remove when done</button>
+                <div style="margin-top: 40px;">Above button does not work yet. Buttons below for dev purposes only. Remove these and this message when done.
+                    Page should be empty where this text and buttons are</div>
+                <button type="button" style="margin-top: 10px;" onclick="noResultsClick()">Click here to see popup for "no results"</button>
+                <button type="button" style="margin-top: 10px;" onclick="singleResultClick()">Navigate to single result page</button>
+                <button type="button" style="margin-top: 10px;" onclick="multipleResultClick()">Navigate to multiple results page</button>
             </div>
             <!-- location tab -->
             <div class="tab-pane" id="locationTab">
-                <h1>MAP</h1>
+                <div id="map"></div>
+                <button type="button" class="btn btn-lg btn-block map-search-button search-button">Search</button>
             </div>
         </div>
         <div class="footer navbar-fixed-bottom">
@@ -79,6 +83,7 @@
             </div>
         </div>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkTkE3NYsKwcuNdn0JZdK3Lg3TiqCO_u0"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
