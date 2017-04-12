@@ -4,19 +4,17 @@ html {
     height: 100%;
 }
 
-.container {
-    height: calc(100% - 50px);
-}
-
-body {
+body,
+.container,
+#locationTab {
     height: 100%;
 }
 
 .tab-content {
-    height: calc(100% - 177px);
+    height: calc(100% - 212px);
 }
 
-#locationTab {
+/*#locationTab {
     height: calc(100% - 50px);
 }
 
@@ -24,7 +22,7 @@ body {
     #locationTab {
         height: calc(100% - 30px);
     }
-}
+}*/
 
 .page-header {
     margin-top: 5px;
@@ -82,7 +80,6 @@ body {
 #poleIdTab {
     width: 80%;
     margin: auto;
-    margin-top: 50px;
 }
 
 .search-button {
@@ -91,7 +88,7 @@ body {
     border-color: #aac341;
     color: white;
     max-width: 550px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .search-button:active,
@@ -124,6 +121,6 @@ td {
 }
 
 #map {
-    height: 100%;
+    height: calc(100% - 65px);
     width: 100%;
 }

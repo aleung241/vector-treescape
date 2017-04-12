@@ -37,7 +37,7 @@ function geocodeLatLng(geocoder, map, infowindow, pos) {
     geocoder.geocode({ 'location': pos }, function (results, status) {
         if (status === 'OK') {
             if (results[1]) {
-                map.setZoom(17);
+                map.setZoom(16);
                 infoWindow.setPosition(pos);
                 infowindow.setContent("<p>Your current location: <p>" + results[1].formatted_address);
                 infowindow.open(map);
@@ -65,7 +65,7 @@ function noResultsClick() {
 function noGeolocationAccept() {
     swal({
         title: "Geolocation service failed",
-        text: "Please refresh page and allow browser to locate you",
+        text: "Please set browser's permissions to allow location",
         type: "warning",
         confirmButtonColor: "#aac341"
     });
